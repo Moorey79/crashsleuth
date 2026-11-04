@@ -19,7 +19,7 @@ Run `CrashSleuth-Setup-x.y.z.exe`. This is a test version and isn't code-signed 
 
 ## Privacy
 
-Nothing about your PC is sent anywhere. Reports stay on your PC (Documents > CrashSleuth Reports). CrashSleuth downloads Microsoft's free crash analyser (WinDbg) the first time it finds crash dumps, and small updates to its list of known problems.
+Nothing about your PC is sent anywhere automatically. Reports stay on your PC (Documents > CrashSleuth Reports) unless you choose to email one. CrashSleuth downloads Microsoft's free crash analyser (WinDbg) the first time it finds crash dumps, and small updates to its list of known problems.
 
 ## Sending a report
 
