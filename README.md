@@ -21,6 +21,10 @@ Run `CrashSleuth-Setup-x.y.z.exe`. This is a test version and isn't code-signed 
 
 Nothing about your PC is sent anywhere. Reports stay on your PC (Documents > CrashSleuth Reports). CrashSleuth downloads Microsoft's free crash analyser (WinDbg) the first time it finds crash dumps, and small updates to its list of known problems.
 
-## Testing it?
+## Sending a report
 
-Thanks! After a scan, send the newest report from **Documents > CrashSleuth Reports** to whoever gave you CrashSleuth, plus a line on what actually turned out to be wrong if you found out.
+Thanks for testing! After a scan, email the newest report from **Documents > CrashSleuth Reports** (the `.txt` or `.html` file) to **reports@directcompare.dev**.
+
+If you found out what was really wrong with the PC, add a line saying so ("CrashSleuth said X, it turned out to be Y"). That's the most useful thing you can send.
+
+Please don't attach reports to GitHub issues: they're public, and reports list the PC's name and installed programs.
