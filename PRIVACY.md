@@ -1,11 +1,11 @@
 # CrashSleuth privacy policy
 
-*Last updated: 6 November 2026*
+*Last updated: 11 November 2026*
 
 CrashSleuth is a Windows utility made by Steve Moorey (New South Wales, Australia). It works out why a PC crashes and fixes the cause. This policy covers the CrashSleuth app, whether installed from the Microsoft Store or from GitHub.
 
 ## What CrashSleuth looks at
-To do its job, CrashSleuth reads information that's already on your PC: crash dumps, Windows event logs, drivers, installed programs, services, scheduled tasks, startup entries, Windows Security (Defender) settings, and performance counters. With the background monitor on, it also records memory and resource use, error dialogs (including a screenshot of the dialog), and changes to programs and settings.
+To do its job, CrashSleuth reads information that's already on your PC: crash dumps, Windows event logs, drivers, installed programs, services, scheduled tasks, startup entries, Windows Security (Defender) settings, and performance counters. With the background monitor on, it also records memory and resource use, error dialogs (including a screenshot of the dialog), and changes to programs and settings. It also notes which programs connect to the internet (where to, when and how much, never what they send), keeps that for 24 hours where only administrators can read it, and leaves out programs that are signed and installed in Windows or Program Files, such as your browser. That's how it spots malware and adware calling home.
 
 ## Where it goes
 **Everything stays on your PC.** CrashSleuth keeps its history, reports and undo records in `C:\ProgramData\CrashSleuth` and your user folders. It has no accounts, no analytics, no advertising and no telemetry. Nothing about you or your PC is sent to the developer or anyone else.

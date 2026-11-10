@@ -9,7 +9,7 @@ Finds out why a Windows PC crashes, freezes or shows error pop-ups, explains it 
 - Reads Windows' own crash records: blue screen crash dumps, event logs and error reports, and names the driver, device or program behind the crashes.
 - Checks drivers, startup programs, antivirus settings, drives, the CPU and BIOS for known problems, including malware hiding its tracks.
 - Offers fixes you choose yourself. Before changing anything it makes a System Restore point, and every fix can be undone.
-- Optionally watches in the background (a coloured dot by the clock) to catch crashes that happen while you're away.
+- Optionally watches in the background (a coloured dot by the clock) to catch crashes that happen while you're away, and programs calling home the way adware and malware do.
 
 It never deletes your files, never clears Windows' logs, doesn't "clean the registry" and doesn't install drivers.
 
@@ -19,12 +19,12 @@ Run `CrashSleuth-Setup-x.y.z.exe`. This is a test version and isn't code-signed 
 
 ## Privacy
 
-Nothing about your PC is sent anywhere automatically. Reports stay on your PC (Documents > CrashSleuth Reports) unless you choose to email one. CrashSleuth downloads Microsoft's free crash analyser (WinDbg) the first time it finds crash dumps, and small updates to its list of known problems.
+Nothing about your PC is sent anywhere automatically. Reports stay on your PC (Documents > CrashSleuth Reports) unless you choose to email one. The background monitor notes which programs go online (where to and when, never what they send), leaves out signed programs in Windows and Program Files such as your browser, and keeps it for 24 hours where only administrators can read it. Full details: [privacy policy](PRIVACY.md). CrashSleuth downloads Microsoft's free crash analyser (WinDbg) the first time it finds crash dumps, and small updates to its list of known problems.
 
 ## Sending a report
 
-Thanks for testing! After a scan, email the newest report from **Documents > CrashSleuth Reports** (the `.txt` or `.html` file) to **reports@directcompare.dev**.
+Thanks for testing! After a scan, email the newest report ending in **-shareable** from **Documents > CrashSleuth Reports** (the `.txt` or `.html` file) to **reports@directcompare.dev**. That copy has your names, the PC's name, email, network and web addresses and screenshots taken out.
 
 If you found out what was really wrong with the PC, add a line saying so ("CrashSleuth said X, it turned out to be Y"). That's the most useful thing you can send.
 
-Please don't attach reports to GitHub issues: they're public, and reports list the PC's name and installed programs.
+Please don't attach reports to GitHub issues: they're public, and even the shareable copy lists installed programs.
