@@ -1,6 +1,6 @@
 # CrashSleuth privacy policy
 
-*Last updated: 11 November 2026*
+*Last updated: 22 November 2026*
 
 CrashSleuth is a Windows utility made by Steve Moorey (New South Wales, Australia). It works out why a PC crashes and fixes the cause. This policy covers the CrashSleuth app, whether installed from the Microsoft Store or from GitHub.
 
@@ -13,9 +13,12 @@ To do its job, CrashSleuth reads information that's already on your PC: crash du
 ## The only things it downloads
 - **Known-issue rules:** about once a day it checks for an updated, digitally signed rules file at github.com/Moorey79/crashsleuth-rules. Nothing is uploaded. GitHub sees an ordinary download request, under GitHub's own privacy policy.
 - **Microsoft's crash analyser (optional):** if a crash dump needs it, and you've allowed it, CrashSleuth downloads Microsoft's debugging tools and symbol files from Microsoft's servers, under Microsoft's privacy policy.
+- - **App updates (GitHub builds):** about once a day, standalone installations check GitHub for a newer version and download small, verified update patches (Microsoft Store installs update through the Store instead).
+
 
 ## Sharing reports
-CrashSleuth never sends a report by itself. If you choose to email a report to the developer for help, it contains details of your PC (computer name, hardware, installed software, and crash and event history). Only send what you're happy to share. Reports sent to reports@directcompare.dev are used only to help you and to improve CrashSleuth. They're not shared with anyone, and are deleted on request.
+CrashSleuth never sends a report by itself. Every scan saves a **-shareable** copy with your user names, PC name, email, network and web addresses, and error-dialog screenshots removed (though it still lists installed software). If you choose to email a report to `reports@directcompare.dev`, it is used only to help you and improve CrashSleuth, is never shared with anyone else, and is deleted on request.
+
 
 ## AI assistants
 If you connect CrashSleuth to the Claude desktop app (off unless you turn it on), Claude can run scans and read reports on your PC. What Claude does with that information is covered by Anthropic's privacy policy.
