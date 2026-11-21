@@ -18,6 +18,8 @@ It never deletes your files, never clears Windows' logs, doesn't "clean the regi
 
 Run `CrashSleuth-Setup-x.y.z.exe`. This is a test version and isn't code-signed yet, so Windows may show **"Windows protected your PC"**: click **More info**, then **Run anyway**. (You can verify the download's SHA-256 checksum against the `.sha256.txt` file on the release page.)
 
+OR, if you really don't trust anything with those warnings, you can get it from the Microsoft Store. https://apps.microsoft.com/detail/9N7W1RS508CL?hl=en-us&gl=AU&ocid=pdpshare
+
 ## Privacy
 
 Nothing about your PC is sent anywhere automatically. Reports stay on your PC (`Documents > CrashSleuth Reports`) unless you choose to email one. The background monitor notes which programs go online (where to and when, never what they send), leaves out signed programs in Windows and Program Files such as your browser, and keeps it for 24 hours where only administrators can read it. Full details: [privacy policy](PRIVACY.md). CrashSleuth downloads Microsoft's free crash analyser (WinDbg) the first time it finds crash dumps, and small signed updates to its list of known problems.
