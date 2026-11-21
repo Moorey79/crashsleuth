@@ -3,6 +3,7 @@
 Finds out why a Windows PC crashes, freezes or shows error pop-ups, explains it in plain English, and fixes what it safely can, with an undo button.
 
 **[Download the latest version](https://github.com/Moorey79/crashsleuth/releases/latest)** (Windows 10/11, 64-bit)
+Or get it from the Microsoft Store https://apps.microsoft.com/detail/9N7W1RS508CL?hl=en-us&gl=AU&ocid=pdpshare
 
 ## What it does
 
