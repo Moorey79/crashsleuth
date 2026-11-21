@@ -6,20 +6,21 @@ Finds out why a Windows PC crashes, freezes or shows error pop-ups, explains it 
 
 ## What it does
 
-- Reads Windows' own crash records: blue screen crash dumps, event logs and error reports, and names the driver, device or program behind the crashes.
-- Checks drivers, startup programs, antivirus settings, drives, the CPU and BIOS for known problems, including malware hiding its tracks.
-- Offers fixes you choose yourself. Before changing anything it makes a System Restore point, and every fix can be undone.
-- Optionally watches in the background (a coloured dot by the clock) to catch crashes that happen while you're away, and programs calling home the way adware and malware do.
+- **Goes past `ntoskrnl.exe`:** Reads blue screen crash dumps, event logs, and error reports—and when Windows blames itself, runs deeper WinDbg checks (`!pool` memory tracing, `!running -it` across CPU cores, `!irp` sleep/wake hangs, and annotated call stacks) to name the real third-party driver behind the crash.
+- **Saves your last two full dumps:** Keeps copies of your two newest `MEMORY.DMP` files before Windows overwrites them (respecting disk-space limits) so evidence isn't lost on a second crash.
+- **Checks the whole system:** Scans drivers, startup programs, antivirus settings, drive health, temperatures/power history, CPU and BIOS for known problems, including malware hiding its tracks.
+- **Offers safe, reversible fixes:** You choose what to apply. Before changing anything it makes a System Restore point, and every fix can be undone.
+- **Optional background monitor:** Watches in the background (a coloured dot by the clock) to catch crashes while you're away, slow memory/handle leaks, and programs calling home the way adware and malware do.
 
 It never deletes your files, never clears Windows' logs, doesn't "clean the registry" and doesn't install drivers.
 
 ## Installing
 
-Run `CrashSleuth-Setup-x.y.z.exe`. This is a test version and isn't code-signed yet, so Windows may show **"Windows protected your PC"**: click **More info**, then **Run anyway**.
+Run `CrashSleuth-Setup-x.y.z.exe`. This is a test version and isn't code-signed yet, so Windows may show **"Windows protected your PC"**: click **More info**, then **Run anyway**. (You can verify the download's SHA-256 checksum against the `.sha256.txt` file on the release page.)
 
 ## Privacy
 
-Nothing about your PC is sent anywhere automatically. Reports stay on your PC (Documents > CrashSleuth Reports) unless you choose to email one. The background monitor notes which programs go online (where to and when, never what they send), leaves out signed programs in Windows and Program Files such as your browser, and keeps it for 24 hours where only administrators can read it. Full details: [privacy policy](PRIVACY.md). CrashSleuth downloads Microsoft's free crash analyser (WinDbg) the first time it finds crash dumps, and small updates to its list of known problems.
+Nothing about your PC is sent anywhere automatically. Reports stay on your PC (`Documents > CrashSleuth Reports`) unless you choose to email one. The background monitor notes which programs go online (where to and when, never what they send), leaves out signed programs in Windows and Program Files such as your browser, and keeps it for 24 hours where only administrators can read it. Full details: [privacy policy](PRIVACY.md). CrashSleuth downloads Microsoft's free crash analyser (WinDbg) the first time it finds crash dumps, and small signed updates to its list of known problems.
 
 ## Sending a report
 
