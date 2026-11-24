@@ -13,6 +13,9 @@ Or get it from the Microsoft Store https://apps.microsoft.com/detail/9N7W1RS508C
 - **Checks the whole system:** Scans drivers, startup programs, antivirus settings, drive health, temperatures/power history, CPU and BIOS for known problems, including malware hiding its tracks.
 - **Offers safe, reversible fixes:** You choose what to apply. Before changing anything it makes a System Restore point, and every fix can be undone.
 - **Optional background monitor:** Watches in the background (a coloured dot by the clock) to catch crashes while you're away, slow memory/handle leaks, and programs calling home the way adware and malware do.
+- **Explains every alert:** which file, program, drive or service was involved, what happened, what it means and what to do, with a plain verdict (Looks fine, Worth checking, Act on this).
+- **Keeps itself up to date:** checks once a day and downloads only what changed (usually a few hundred KB, not the whole installer). Every update is digitally signed and checked before it goes in, and put back by itself if the new version doesn't run.
+- **Help built in:** press F1 anywhere, or **Help** in the main window or the tray menu.
 
 It never deletes your files, never clears Windows' logs, doesn't "clean the registry" and doesn't install drivers.
 
@@ -20,11 +23,13 @@ It never deletes your files, never clears Windows' logs, doesn't "clean the regi
 
 Run `CrashSleuth-Setup-x.y.z.exe`. This is a test version and isn't code-signed yet, so Windows may show **"Windows protected your PC"**: click **More info**, then **Run anyway**. (You can verify the download's SHA-256 checksum against the `.sha256.txt` file on the release page.)
 
+Already have 0.9.12 or newer? It updates itself, so there's nothing to do. Older versions need the new one installed over the top once.
+
 OR, if you really don't trust anything with those warnings, you can get it from the Microsoft Store. https://apps.microsoft.com/detail/9N7W1RS508CL?hl=en-us&gl=AU&ocid=pdpshare
 
 ## Privacy
 
-Nothing about your PC is sent anywhere automatically. Reports stay on your PC (`Documents > CrashSleuth Reports`) unless you choose to email one. The background monitor notes which programs go online (where to and when, never what they send), leaves out signed programs in Windows and Program Files such as your browser, and keeps it for 24 hours where only administrators can read it. Full details: [privacy policy](PRIVACY.md). CrashSleuth downloads Microsoft's free crash analyser (WinDbg) the first time it finds crash dumps, and small signed updates to its list of known problems.
+Nothing about your PC is sent anywhere automatically. Reports stay on your PC (`Documents > CrashSleuth Reports`) unless you choose to email one. The background monitor notes which programs go online (where to and when, never what they send), leaves out signed programs in Windows and Program Files such as your browser, and keeps it for 24 hours where only administrators can read it. Full details: [privacy policy](PRIVACY.md). CrashSleuth downloads Microsoft's free crash analyser (WinDbg) the first time it finds crash dumps, small signed updates to its list of known problems, and (once a day) new versions of itself, downloading only what changed.
 
 ## Sending a report
 
