@@ -17,7 +17,7 @@ To do its job, CrashSleuth reads information that's already on your PC: crash du
 - **Driver updates on offer:** once a day a scan asks Windows Update (Windows' own service) which newer drivers it has for this PC. Windows Update contacts Microsoft the same way it does for your normal updates. A driver is installed only if you choose that fix.
 
 ## Sharing reports
-CrashSleuth never sends a report by itself. If you choose to email a report to the developer for help, it contains details of your PC (computer name, hardware, installed software, and crash and event history). Only send what you're happy to share. Reports sent to reports@directcompare.dev are used only to help you and to improve CrashSleuth. They're not shared with anyone, and are deleted on request.
+CrashSleuth never sends a report by itself. Every scan saves a **-shareable** copy with your user names, PC name, email, network and web addresses, and error-dialog screenshots removed (though it still lists installed software). If you choose to email a report to `reports@directcompare.dev`, it is used only to help you and improve CrashSleuth, is never shared with anyone else, and is deleted on request.
 
 ## AI assistants
 If you connect CrashSleuth to the Claude desktop app (off unless you turn it on), Claude can run scans and read reports on your PC. What Claude does with that information is covered by Anthropic's privacy policy.
